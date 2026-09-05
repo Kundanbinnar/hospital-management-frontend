@@ -1,0 +1,156 @@
+.patient-details-card {
+  background: #ffffff;
+  width: 700px;
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Header */
+
+.patient-details-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.patient-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+
+  background: #eef4ff;
+  color: #3b6fc4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.patient-details-header h2 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  color: #1f2937;
+}
+
+.patient-details-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* Sections */
+
+.patient-details-section {
+  padding: 25px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.patient-details-section h3 {
+  margin: 0 0 18px;
+  font-size: 17px;
+  color: #1f2937;
+}
+
+
+/* Grid */
+
+.patient-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+
+/* Detail Box */
+
+.patient-detail {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.patient-detail-full {
+  grid-column: span 2;
+}
+
+
+/* Labels */
+
+.patient-detail label {
+  display: block;
+  margin-bottom: 6px;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+
+  text-transform: uppercase;
+}
+
+
+/* Values */
+
+.patient-detail p {
+  margin: 0;
+
+  font-size: 15px;
+  color: #1f2937;
+}
+
+
+/* Footer */
+
+.patient-details-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 25px;
+}
+
+.patient-details-footer button {
+  padding: 9px 22px;
+
+  border: 1px solid #c7d7f2;
+  border-radius: 7px;
+
+  background: #eef4ff;
+  color: #3b6fc4;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.patient-details-footer button:hover {
+  background: #dfeaff;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+  .patient-details-card {
+    padding: 20px;
+  }
+
+  .patient-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-detail-full {
+    grid-column: span 1;
+  }
+}

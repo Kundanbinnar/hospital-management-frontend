@@ -1,0 +1,26 @@
+.profile-container {
+    position: relative;
+}
+
+.profile-dropdown {
+    margin-right: 5px;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 180px;
+    background: white;
+    border: 1px solid #eff4f3;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.profile-dropdown div {
+    padding: 12px;
+    cursor: pointer;
+    border: 1px solid #c6f0e6;
+}
+
+.profile-dropdown div:hover {
+    background-color: #f1f1f1;
+}

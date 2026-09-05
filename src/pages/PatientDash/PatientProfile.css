@@ -1,0 +1,312 @@
+/* ================= PROFILE PAGE ================= */
+
+.patient-profile-page {
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    padding: 15px 8%;
+    background: #f5f9f8;
+    box-sizing: border-box;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+
+/* ================= HEADER ================= */
+
+.profile-card .welcome-text {
+    margin-bottom: 10px;
+}
+
+.profile-card .welcome-text > span {
+    color: #0b8f7d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+
+.profile-card .welcome-text h2 {
+    margin: 8px 0 5px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e2d2b;
+}
+
+.profile-card .welcome-text p {
+    margin: 0;
+    color: #7c8986;
+    font-size: 14px;
+}
+
+
+/* ================= PROFILE INFORMATION ================= */
+
+.profile-form {
+    width: 100%;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    padding: 40px 45px;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 70px;
+    row-gap: 10px;
+
+    border: 1px solid #e4ecea;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .04);
+}
+
+
+/* ================= FIELD ================= */
+
+.profile-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* LABEL */
+
+.profile-form .form-group > label {
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #7a8784;
+
+    text-transform: uppercase;
+    letter-spacing: .7px;
+}
+
+
+/* ================= REMOVE INPUT BOX LOOK ================= */
+
+.profile-form .input-wrapper {
+    width: 100%;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 1px solid #e6eceb;
+
+    border-radius: 0;
+
+    transition: .2s ease;
+
+    box-sizing: border-box;
+}
+
+
+/* ICON */
+
+.profile-form .input-wrapper > span {
+    width: 30px;
+    min-width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 15px;
+}
+
+
+/* INPUT */
+
+.profile-form .input-wrapper input,
+.profile-form .input-wrapper select {
+
+    flex: 1;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+
+    color: #263633;
+
+    padding: 0;
+}
+
+
+/* READONLY NAME */
+
+.profile-form .input-wrapper input[readonly] {
+    font-weight: 600;
+}
+
+
+/* FOCUS */
+
+.profile-form .input-wrapper:focus-within {
+    border-bottom-color: #0b8f7d;
+
+    box-shadow: none;
+}
+
+
+/* ================= EMAIL ================= */
+
+.profile-form .email-field {
+    grid-column: span 2;
+}
+
+
+/* ================= FULL NAME ================= */
+
+.profile-form .form-group:first-child {
+    grid-column: span 2;
+}
+
+
+/* ================= GENDER ================= */
+
+.profile-form .role-group {
+    width: 100%;
+    height: 42px;
+
+    display: flex;
+    gap: 12px;
+}
+
+
+.profile-form .role-option {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 7px;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 1px solid #e6eceb;
+
+    border-radius: 0;
+
+    color: #263633;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.profile-form .role-option input {
+    accent-color: #0b8f7d;
+}
+
+
+/* ================= ADDRESS ================= */
+
+.profile-form .form-group:nth-child(6) {
+    grid-column: span 2;
+}
+
+
+/* ================= SAVE BUTTON ================= */
+
+.profile-form .register-btn {
+
+    grid-column: span 2;
+
+    justify-self: end;
+
+    width: 170px;
+    height: 45px;
+
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #0b8f7d;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    transition: .2s ease;
+}
+
+
+.profile-form .register-btn:hover {
+    background: #08786b;
+}
+
+
+.profile-form .register-btn span {
+    transition: .2s ease;
+}
+
+
+.profile-form .register-btn:hover span {
+    transform: translateX(4px);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    .patient-profile-page {
+        padding: 30px 20px;
+    }
+
+    .profile-form {
+        grid-template-columns: 1fr;
+        padding: 30px 25px;
+        column-gap: 0;
+        row-gap: 25px;
+    }
+
+    .profile-form .form-group:first-child,
+    .profile-form .email-field,
+    .profile-form .form-group:nth-child(6),
+    .profile-form .register-btn {
+        grid-column: span 1;
+    }
+
+    .profile-form .register-btn {
+        width: 100%;
+    }
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}

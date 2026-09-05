@@ -1,0 +1,211 @@
+.prescription-card {
+    margin-top: 15px;
+    padding: 24px 28px;
+    margin-bottom: 22px;
+    background: #ffffff;
+    border: 1px solid #c8d8ce;
+    border-left: 5px solid #2f7d5a;
+    border-radius: 12px;
+    width: 78%;
+    margin-left: 12%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* ================= HEADER ================= */
+
+.prescription-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 25px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #dfe6e2;
+}
+
+.prescription-header h3 {
+    margin: 5px 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2933;
+}
+
+.prescription-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+
+/* ================= LABEL ================= */
+
+.prescription-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2f7d5a;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+
+/* ================= REASON ================= */
+
+.prescription-reason {
+    padding: 16px 0;
+    border-bottom: 1px solid #dfe6e2;
+}
+
+.prescription-reason p {
+    margin: 6px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+
+/* ================= PRESCRIPTION BODY ================= */
+
+.prescription-body {
+    margin-top: 22px;
+}
+
+.prescription-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.prescription-title h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 650;
+    color: #1f2933;
+}
+
+.prescription-title span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2f7d5a;
+}
+
+
+/* ================= MEDICINE TABLE ================= */
+
+.medicine-table {
+    width: 100%;
+    border: 1px solid #d5dfd9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.medicine-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.medicine-row > div {
+    padding: 13px 15px;
+    font-size: 14px;
+}
+
+
+/* Table Header */
+
+.medicine-header {
+    background: #eaf2ed;
+    border-bottom: 1px solid #d5dfd9;
+}
+
+.medicine-header > div {
+    font-size: 11px;
+    font-weight: 700;
+    color: #35634d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* Table Rows */
+
+.medicine-row:not(.medicine-header) {
+    border-bottom: 1px solid #e5ebe7;
+}
+
+.medicine-row:last-child {
+    border-bottom: none;
+}
+
+.medicine-row:not(.medicine-header) > div {
+    color: #374151;
+    font-weight: 500;
+}
+
+.medicine-name {
+    font-weight: 600 !important;
+    color: #1f2933 !important;
+}
+
+
+/* ================= DIAGNOSIS / NOTES ================= */
+
+.prescription-info {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid #dfe6e2;
+}
+
+.prescription-info p {
+    margin: 6px 0 0;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #374151;
+}
+
+
+/* ================= HOVER EFFECT ================= */
+
+.prescription-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.09);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+    .prescription-card {
+        width: 94%;
+        margin-left: 3%;
+        padding: 18px;
+    }
+
+    .prescription-header {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .medicine-row {
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+
+    .medicine-row > div {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .medicine-header > div {
+        font-size: 10px;
+    }
+
+    .prescription-title h4 {
+        font-size: 16px;
+    }
+
+    .prescription-header h3 {
+        font-size: 16px;
+    }
+}

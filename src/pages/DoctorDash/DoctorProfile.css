@@ -1,0 +1,352 @@
+/* ============================= */
+/* DOCTOR PROFILE */
+/* ============================= */
+
+.doctor-profile-page {
+    min-height: calc(100vh - 70px);
+    width: 100%;
+
+    padding: 35px 8%;
+
+    box-sizing: border-box;
+
+    background: #f5f9f8;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    color: #263633;
+}
+
+
+/* ============================= */
+/* PROFILE HEADER */
+/* ============================= */
+
+.doctor-profile-top {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.doctor-profile-avatar {
+    width: 78px;
+    height: 78px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dff3ef;
+
+    color: #0b8f7d;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    border: 5px solid #ffffff;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .06);
+}
+
+.doctor-profile-title span {
+    color: #0b8f7d;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.doctor-profile-title h1 {
+    margin: 5px 0;
+
+    font-size: 28px;
+
+    color: #1e2d2b;
+
+    font-weight: 700;
+}
+
+.doctor-profile-title p {
+    margin: 0;
+
+    color: #7c8986;
+
+    font-size: 14px;
+}
+
+
+/* ============================= */
+/* PROFILE SECTION */
+/* ============================= */
+
+.doctor-profile-section {
+    background: #ffffff;
+
+    padding: 28px 35px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e3ece9;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, .035);
+}
+
+
+/* ============================= */
+/* SECTION TITLE */
+/* ============================= */
+
+.doctor-section-title {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #edf1f0;
+}
+
+.doctor-section-title h2 {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #1e2d2b;
+}
+
+.doctor-section-title span {
+    font-size: 12px;
+
+    color: #9aa5a2;
+}
+
+
+/* ============================= */
+/* FIELDS */
+/* ============================= */
+
+.doctor-fields {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 50px;
+
+    row-gap: 22px;
+}
+
+.doctor-field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.doctor-field label {
+    font-size: 12px;
+
+    color: #788682;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .6px;
+}
+
+
+/* ============================= */
+/* INPUTS */
+/* ============================= */
+
+.doctor-field input,
+.doctor-field select,
+.doctor-field textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-bottom: 1px solid #dfe8e5;
+
+    border-radius: 0;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 10px 2px;
+
+    color: #263633;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    transition: .2s ease;
+}
+
+.doctor-field input,
+.doctor-field select {
+    height: 42px;
+}
+
+.doctor-field textarea {
+    resize: vertical;
+
+    min-height: 100px;
+
+    line-height: 1.6;
+}
+
+.doctor-field input:focus,
+.doctor-field select:focus,
+.doctor-field textarea:focus {
+    border-bottom-color: #0b8f7d;
+}
+
+
+/* ============================= */
+/* PLACEHOLDER */
+/* ============================= */
+
+.doctor-field input::placeholder,
+.doctor-field textarea::placeholder {
+    color: #a5afac;
+}
+
+
+/* ============================= */
+/* FEE */
+/* ============================= */
+
+.fee-input {
+    display: flex;
+
+    align-items: center;
+
+    border-bottom: 1px solid #dfe8e5;
+}
+
+.fee-input span {
+    font-size: 15px;
+
+    color: #0b8f7d;
+
+    font-weight: 600;
+
+    padding-right: 7px;
+}
+
+.fee-input input {
+    border-bottom: none !important;
+
+    flex: 1;
+}
+
+
+/* ============================= */
+/* ACTION */
+/* ============================= */
+
+.doctor-profile-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    padding: 5px 0 25px;
+}
+
+.doctor-profile-actions button {
+    min-width: 165px;
+
+    height: 44px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #0b8f7d;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.doctor-profile-actions button:hover {
+    background: #08786b;
+
+    transform: translateY(-1px);
+}
+
+.doctor-profile-actions button span {
+    margin-left: 10px;
+
+    transition: .2s ease;
+}
+
+.doctor-profile-actions button:hover span {
+    margin-left: 14px;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 700px) {
+
+    .doctor-profile-page {
+        padding: 25px 20px;
+    }
+
+    .doctor-profile-top {
+        align-items: flex-start;
+    }
+
+    .doctor-profile-title h1 {
+        font-size: 24px;
+    }
+
+    .doctor-fields {
+        grid-template-columns: 1fr;
+
+        column-gap: 0;
+    }
+
+    .doctor-profile-section {
+        padding: 25px 20px;
+    }
+
+    .doctor-section-title {
+        flex-direction: column;
+
+        gap: 3px;
+    }
+
+    .doctor-profile-actions button {
+        width: 100%;
+    }
+}
