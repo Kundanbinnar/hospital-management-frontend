@@ -1,10 +1,13 @@
 import axios from "axios";
 import React from "react";
+import API_URL from "./API_URL";
 
 
-const BASE_URL = "http://localhost:8080/api/appointment";
+const BASE_URL = `${API_URL}/api/appointment`;
 
-const getPatient = "http://localhost:8080/api/patient";
+const getPatient = `${API_URL}/api/patient`; 
+
+const prescription_URL = `${API_URL}/api/prescription`;
 
 class PatientServices{
 
@@ -30,7 +33,7 @@ class PatientServices{
     // mistakenly written patients role service here (only 1st 3 services)
     viewMyProfile(){
         const token = localStorage.getItem("token");
-        const myProfile_url = "http://localhost:8080/api/patient/myProfile";
+        const myProfile_url = `${getPatient}/myProfile`;
         return axios.get(myProfile_url, {
             headers:{
                 Authorization: `Bearer ${token}`
@@ -40,7 +43,7 @@ class PatientServices{
 //2
      updatePatientProfile(requestJSON){
             const token = localStorage.getItem("token")
-            const updateMyProfile_URL = "http://localhost:8080/api/patient/updateMyProfile";
+            const updateMyProfile_URL = `${getPatient}/updateMyProfile`;
             return axios.put(updateMyProfile_URL, requestJSON,{
                 headers:{
                     Authorization: `Bearer ${token}`
@@ -51,7 +54,7 @@ class PatientServices{
         //3
         getMyPrescriptions(){
           const token = localStorage.getItem("token")
-          const getPrescription_URL = "http://localhost:8080/api/prescription/myPrescriptions";
+          const getPrescription_URL = `${prescription_URL}/myPrescriptions`;
             return axios.get(getPrescription_URL,{
                 headers:{
                     Authorization: `Bearer ${token}`
@@ -61,7 +64,7 @@ class PatientServices{
 
        getPatientsPrescriptions(id){
         const token = localStorage.getItem("token")
-        const getPatientPrescription_URL = `http://localhost:8080/api/prescription/patient/${id}`;
+        const getPatientPrescription_URL = `${prescription_URL}/patient/${id}`;
         return axios.get(getPatientPrescription_URL,{
                 headers:{
                     Authorization: `Bearer ${token}`
@@ -71,7 +74,7 @@ class PatientServices{
 
        addPrescription(requestJSON){
         const token = localStorage.getItem("token")
-        const addPrescription_URL = `http://localhost:8080/api/prescription/addPrescription`;
+        const addPrescription_URL = `${prescription_URL}/addPrescription`;
         return axios.post(addPrescription_URL, requestJSON,{
             headers:{
                 Authorization:`Bearer ${token}`

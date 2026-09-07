@@ -1,8 +1,8 @@
 import React from 'react';
 import axios from "axios";
+import API_URL from './API_URL';
 
-const BASE_URL = "http://localhost:8080/api/appointment";
-
+const BASE_URL = `${API_URL}/api/appointment`;
 
 class AppointmentService {
  

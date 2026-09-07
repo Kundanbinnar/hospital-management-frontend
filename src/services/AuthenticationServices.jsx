@@ -1,8 +1,9 @@
 
 import React from 'react'
 import axios from "axios";
+import API_URL from './API_URL';
 
-const LOGIN_URL = "http://localhost:8080/api/user/login";
+const LOGIN_URL = `${API_URL}/api/user/login`;
 
 class AuthenticationServices {
 
@@ -11,17 +12,17 @@ class AuthenticationServices {
     }
 
     registeUser(requestJSON){
-        const  REGISTER_URL = "http://localhost:8080/api/user/register";
+        const REGISTER_URL = `${API_URL}/api/user/register`;
         return axios.post(REGISTER_URL, requestJSON);
     }
 
     savePatientProfile(id, requestJSON){
-         const  savePatientProfile_URL = `http://localhost:8080/api/patient/${id}`;
+         const  savePatientProfile_URL = `${API_URL}/api/patient/${id}`;
          return axios.put(savePatientProfile_URL,requestJSON)
     }
 
     saveDoctorProfile(id, requestJSON){
-        const  saveDoctorProfile_URL = `http://localhost:8080/api/doctors/${id}`;
+        const  saveDoctorProfile_URL = `${API_URL}/api/doctors/${id}`;
          return axios.put(saveDoctorProfile_URL, requestJSON) 
     }
 
