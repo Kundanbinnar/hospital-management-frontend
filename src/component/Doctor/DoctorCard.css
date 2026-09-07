@@ -164,3 +164,124 @@
     color: #d37070;
     border: 1px solid #e56363;
 }
+
+/* =========================
+   Responsive Design
+   ========================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .doctor-list-container {
+        padding: 20px;
+    }
+
+    .doctor-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .doctor-card {
+        height: 220px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .doctor-list-container {
+        padding: 15px 10px;
+    }
+
+    .doctor-list-heading {
+        margin: 10px 0 20px;
+    }
+
+    .doctor-list-heading h2 {
+        font-size: 1.6rem;
+    }
+
+    .doctor-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 5px;
+    }
+
+    .doctor-card {
+        height: auto;
+        min-height: 200px;
+    }
+
+    .doctor-image-section {
+        width: 35%;
+    }
+
+    .doctor-details {
+        width: 65%;
+        padding: 12px;
+    }
+
+    .doctor-details h3 {
+        font-size: 17px;
+    }
+
+    .doctor-details p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .btn-group {
+        margin-top: 12px;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .profile-btn,
+    .book-btn {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    .doctor-status {
+        top: 8px;
+        right: 8px;
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .success-message {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        text-align: center;
+    }
+}
+
+
+/* Very small mobile */
+@media (max-width: 400px) {
+
+    .doctor-card {
+        min-height: 180px;
+    }
+
+    .doctor-details {
+        padding: 10px;
+    }
+
+    .doctor-details h3 {
+        font-size: 15px;
+    }
+
+    .doctor-details p {
+        font-size: 12px;
+    }
+
+    .profile-btn,
+    .book-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
